@@ -1,0 +1,74 @@
+package com.sibirjak.angara.sequence.testhelpers {
+
+	import com.sibirjak.angara.core.LoaderItemStatus;
+	import com.sibirjak.angara.core.testhelpers.CoreTestHelper;
+	import com.sibirjak.angara.resource.IResourceLoader;
+	import com.sibirjak.angara.sequence.ISequence;
+	import org.as3commons.collections.framework.IIterator;
+
+
+	/**
+	 * @author jes 16.02.2009
+	 */
+	public class SequenceTestHelper {
+		
+		public static function createAndFillSequence(numItems : uint) : ISequence {
+			var sequence : ISequence = new SequenceMock();
+			fillSequence(sequence, numItems);
+			return sequence;
+		}
+
+		public static function setSequenceProgress(sequence : ISequence, progress : Number) : void {
+			SequenceMock(sequence).setProgress(progress);
+			SequenceMock(sequence).dispatchProgressMock();
+		}
+
+		public static function setSequenceComplete(sequence : ISequence) : void {
+			SequenceMock(sequence).setProgress(1);
+			SequenceMock(sequence).setNumItemsLoaded(getNumResourceLoaders(sequence));
+
+			SequenceMock(sequence).setStatus(LoaderItemStatus.COMPLETE);
+
+			SequenceMock(sequence).dispatchCompleteMock();
+		}
+
+		public static function getResourceLoaderAt(sequence : ISequence, index : uint) : IResourceLoader {
+			var iterator : IIterator = sequence.iterator();
+			var i : uint = 0;
+			while (iterator.hasNext()) {
+				var item : IResourceLoader = iterator.next() as IResourceLoader;
+				if (i == index) return item;
+				i++;
+			}
+			return null;
+		}
+
+		public static function getNumResourceLoaders(sequence : ISequence) : uint {
+			var iterator : IIterator = sequence.iterator();
+			var numItems : uint = 0;
+			while (iterator.hasNext()) {
+				iterator.next();
+				numItems++;
+			}
+			return numItems;
+		}
+
+		public static function fillSequence(sequence : ISequence, numItems : uint) : void {
+			for (var i : int = 0; i <  numItems ; i++) {
+				var loader : IResourceLoader = CoreTestHelper.createResourceLoader();
+				sequence.add(loader);
+			}
+		}
+
+		public static function setResourceLoaderFailedByIndex(sequence : ISequence, index : uint) : void {
+			var loader : IResourceLoader = getResourceLoaderAt(sequence, index);
+			CoreTestHelper.setResourceLoaderFailed(loader);
+		}
+
+		public static function setResourceLoaderCompletedByIndex(sequence : ISequence, index : uint) : void {
+			var loader : IResourceLoader = getResourceLoaderAt(sequence, index);
+			CoreTestHelper.setResourceLoaderCompleted(loader);
+		}
+
+	}
+}
