@@ -1,0 +1,502 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="IResourceLoader,com.sibirjak.angara.resource.IResourceLoader,bytesLoaded,bytesTotal,content,failedLoadingTrials,httpStatus,loadingError,maxLoadingTrials,url,callbackFunction,timeout,getProperty,load,setProperty" name="keywords">
+<title>com.sibirjak.angara.resource.IResourceLoader</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'IResourceLoader - Angara Load Control 0.9.0';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/sibirjak/angara/resource/IResourceLoader.html&amp;com/sibirjak/angara/resource/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Interface&nbsp;IResourceLoader</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Interface IResourceLoader"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.sibirjak.angara.resource</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Interface</td><td class="classSignature">public interface IResourceLoader extends <a href="../core/ILoaderItem.html">ILoaderItem</a>, <a href="../core/IProgressInfo.html">IProgressInfo</a>, <a href="none">flash.events.IEventDispatcher</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subinterfaces</td><td><a href="loaders/ILoaderDelegate.html">ILoaderDelegate</a>, <a href="loaders/IURLLoaderDelegate.html">IURLLoaderDelegate</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Implementors</td><td><a href="../resource/AbstractResourceLoader.html">AbstractResourceLoader</a></td>
+</tr>
+</table>
+<p></p>
+  Defines the interface of a resource loader item.
+  
+  <p>A resource loader is basically an adapter to any of the built-in
+  Flash loader types (Loader, URLLoader, Sound, ...). This interface
+  lets those loaders interact with the LoaderManager.</p>
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bytesLoaded">bytesLoaded</a> : uint<div class="summaryTableDescription">[read-only]
+   Returns the number of bytes already loaded.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bytesTotal">bytesTotal</a> : uint<div class="summaryTableDescription">[read-only]
+   Returns the number of bytes total.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#callbackFunction">callbackFunction</a> : Function<div class="summaryTableDescription">[write-only]
+   Defines a callback function that will be executed right before the
+   ResourceLoaderEvent.COMPLETE event.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#content">content</a> : *<div class="summaryTableDescription">[read-only]
+   Returns a reference to the loaded content.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#failedLoadingTrials">failedLoadingTrials</a> : uint<div class="summaryTableDescription">[read-only]
+   Returns the number of failed loading trails.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#httpStatus">httpStatus</a> : int<div class="summaryTableDescription">[read-only]
+   Returns the http status of a loaded resource.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/ILoaderItem.html#itemType">itemType</a> : String<div class="summaryTableDescription">
+   The type of the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/ILoaderItem.html">ILoaderItem</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/ILoaderItem.html#key">key</a> : String<div class="summaryTableDescription">
+   Returns the identifying key of the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/ILoaderItem.html">ILoaderItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#loadingError">loadingError</a> : <a href="../resource/LoadingError.html">LoadingError</a>
+<div class="summaryTableDescription">[read-only]
+   Returns the loading error in a ResourceLoaderEvent.FAILURE event.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxLoadingTrials">maxLoadingTrials</a> : uint<div class="summaryTableDescription">
+   Returns the max number of trails in case of failures.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/IProgressInfo.html#numItems">numItems</a> : uint<div class="summaryTableDescription">
+   Returns the number of items to be loaded within the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/IProgressInfo.html">IProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/IProgressInfo.html#numItemsFailed">numItemsFailed</a> : uint<div class="summaryTableDescription">
+   Returns the number of items failed within the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/IProgressInfo.html">IProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/IProgressInfo.html#numItemsLoaded">numItemsLoaded</a> : uint<div class="summaryTableDescription">
+   Returns the number of items loaded within the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/IProgressInfo.html">IProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/IProgressInfo.html#progress">progress</a> : Number<div class="summaryTableDescription">
+   Returns the progress of the loader item as a decimal value between zero and 1.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/IProgressInfo.html">IProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/ILoaderItem.html#scheduled">scheduled</a> : Boolean<div class="summaryTableDescription">
+   Returns true, if the item already has been added to the loader manager
+   directly or to a sequence or a sequence manager.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/ILoaderItem.html">ILoaderItem</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/ILoaderItem.html#status">status</a> : String<div class="summaryTableDescription">
+   The current loading status.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/ILoaderItem.html">ILoaderItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#timeout">timeout</a> : uint<div class="summaryTableDescription">[write-only]
+   Specifies a timeout after that the resource loader will fail.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#url">url</a> : String<div class="summaryTableDescription">[read-only]
+   Returns the URL of the resource loader.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getProperty()">getProperty</a>(name:String):*</div>
+<div class="summaryTableDescription">
+   Lets you pull a prior specified runtime property.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#load()">load</a>():void</div>
+<div class="summaryTableDescription">
+   Starts loading of the resource.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/ILoaderItem.html#pause()">pause</a>():void</div>
+<div class="summaryTableDescription">
+   Marks the item to be ignored by subsequent loader manager queue pulling operations.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/ILoaderItem.html">ILoaderItem</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/ILoaderItem.html#resume()">resume</a>():void</div>
+<div class="summaryTableDescription">
+   Marks a prior paused item to be eligible for loader manager queue polling
+   operations.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/ILoaderItem.html">ILoaderItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setProperty()">setProperty</a>(name:String, value:*):void</div>
+<div class="summaryTableDescription">
+   Lets you specify an arbitrary runtime property to be available within
+   each resource loader event.</div>
+</td><td class="summaryTableOwnerCol">IResourceLoader</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../core/ILoaderItem.html#stop()">stop</a>():void</div>
+<div class="summaryTableDescription">
+   Immediately stops loading of the item or its containing items.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/ILoaderItem.html">ILoaderItem</a></td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="bytesLoaded"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bytesLoaded</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>bytesLoaded:uint</code>&nbsp;&nbsp;[read-only]<p>
+   Returns the number of bytes already loaded.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bytesLoaded():uint</code>
+<br>
+</div>
+<a name="bytesTotal"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bytesTotal</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>bytesTotal:uint</code>&nbsp;&nbsp;[read-only]<p>
+   Returns the number of bytes total.
+   
+   </p><p>Note this is only available after a net connection has been established and
+   the resource information has been received and the http response contains a
+   file size property. In all other cases this method will return zero unit the
+   resource is completely loaded from the server.
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bytesTotal():uint</code>
+<br>
+</div>
+<a name="callbackFunction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">callbackFunction</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>callbackFunction:Function</code>&nbsp;&nbsp;[write-only]<p>
+   Defines a callback function that will be executed right before the
+   ResourceLoaderEvent.COMPLETE event.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set callbackFunction(value:Function):void</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="ICallback.html" target="">ICallback</a>
+</div>
+</div>
+<a name="content"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">content</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>content:*</code>&nbsp;&nbsp;[read-only]<p>
+   Returns a reference to the loaded content.
+   
+   </p><p>For streaming types the content will be available not before the
+   INIT event has been dispatched. For static types the content won't be
+   available until the resource has been loaded completely from the remote
+   destination.
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get content():*</code>
+<br>
+</div>
+<a name="failedLoadingTrials"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">failedLoadingTrials</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>failedLoadingTrials:uint</code>&nbsp;&nbsp;[read-only]<p>
+   Returns the number of failed loading trails.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get failedLoadingTrials():uint</code>
+<br>
+</div>
+<a name="httpStatus"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">httpStatus</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>httpStatus:int</code>&nbsp;&nbsp;[read-only]<p>
+   Returns the http status of a loaded resource.
+   
+   </p><p>Initial value is -1.</p>
+   
+   <p>Loading from a local realm will set the http status to 0.</p>
+   
+   <p>Loading from a not permitted remote realm will set the http status to 0.</p>
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get httpStatus():int</code>
+<br>
+</div>
+<a name="loadingError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loadingError</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>loadingError:<a href="../resource/LoadingError.html">LoadingError</a></code>&nbsp;&nbsp;[read-only]<p>
+   Returns the loading error in a ResourceLoaderEvent.FAILURE event.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get loadingError():<a href="../resource/LoadingError.html">LoadingError</a></code>
+<br>
+</div>
+<a name="maxLoadingTrials"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">maxLoadingTrials</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>maxLoadingTrials:uint</code>&nbsp;&nbsp;[read-write]<p>
+   Returns the max number of trails in case of failures.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get maxLoadingTrials():uint</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxLoadingTrials(value:uint):void</code>
+<br>
+</div>
+<a name="timeout"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">timeout</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>timeout:uint</code>&nbsp;&nbsp;[write-only]<p>
+   Specifies a timeout after that the resource loader will fail.
+   
+   </p><p>If the resource loader does not show any raise in progress within this
+   timeout, the loader will try to restart loading the resource as often as
+   specified in connectionTrials. If the number of connectionTrials has been
+   reached, the loader will be marked as failed and dispatch a 
+   ResourceLoaderEvent.FAILURE.</p>
+   
+   <p>Default value is 1000 ms = 1 second.</p>
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set timeout(value:uint):void</code>
+<br>
+</div>
+<a name="url"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">url</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>url:String</code>&nbsp;&nbsp;[read-only]<p>
+   Returns the URL of the resource loader.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get url():String</code>
+<br>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="getProperty()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getProperty(name:String):*</code><p>
+   Lets you pull a prior specified runtime property.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> &mdash; The name of the property.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code> &mdash; The value of the property to get.
+   </td>
+</tr>
+</table>
+</div>
+<a name="load()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">load</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function load():void</code><p>
+   Starts loading of the resource.
+   
+   </p><p>Won't have any effect if the status is any other than
+   LoaderItemStatus.WAITING.</p>
+   </div>
+<a name="setProperty()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setProperty(name:String, value:*):void</code><p>
+   Lets you specify an arbitrary runtime property to be available within
+   each resource loader event.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> &mdash; The name of the property.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:*</code> &mdash; The value of the property.
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

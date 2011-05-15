@@ -1,0 +1,1149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="AbstractResourceLoader,com.sibirjak.angara.resource.AbstractResourceLoader,_failedLoadingTrials,_loadingError,_loadingTrials,_request,bytesLoaded,bytesTotal,content,failedLoadingTrials,httpStatus,loadingError,maxLoadingTrials,url,callbackFunction,timeout,callbackFinished,clear,dispatchComplete,dispatchFailure,dispatchInit,dispatchLoading,dispatchLoadingTrialFailure,dispatchPause,dispatchProgress,dispatchResume,dispatchStop,getProperty,hasCallback,load,notifyComplete,notifyFailure,notifyHttpStatus,notifyInit,notifyProgress,pause,resume,setProperty,startLoading,stop" name="keywords">
+<title>com.sibirjak.angara.resource.AbstractResourceLoader</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'AbstractResourceLoader - Angara Load Control 0.9.0';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/sibirjak/angara/resource/AbstractResourceLoader.html&amp;com/sibirjak/angara/resource/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;AbstractResourceLoader</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class AbstractResourceLoader"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.sibirjak.angara.resource</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class AbstractResourceLoader</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">AbstractResourceLoader <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> <a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> <a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Implements</td><td><a href="IResourceLoader.html">IResourceLoader</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="loaders/LoaderDelegate.html">LoaderDelegate</a>, <a href="loaders/URLLoaderDelegate.html">URLLoaderDelegate</a></td>
+</tr>
+</table>
+<p></p>
+  Abstract implementation of the IResourceLoader interface.
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bytesLoaded">bytesLoaded</a> : uint<div class="summaryTableDescription">[read-only]
+   
+   Returns the number of bytes already loaded.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#bytesTotal">bytesTotal</a> : uint<div class="summaryTableDescription">[read-only]
+   
+   Returns the number of bytes total.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#callbackFunction">callbackFunction</a> : Function<div class="summaryTableDescription">[write-only]</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#content">content</a> : *<div class="summaryTableDescription">[read-only]
+   
+   Returns a reference to the loaded content.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#failedLoadingTrials">failedLoadingTrials</a> : uint<div class="summaryTableDescription">[read-only]
+   
+   Returns the number of failed loading trails.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#httpStatus">httpStatus</a> : int<div class="summaryTableDescription">[read-only]
+   
+   Returns the http status of a loaded resource.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractLoaderItem.html#itemType">itemType</a> : String<div class="summaryTableDescription">
+   
+   The type of the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractLoaderItem.html#key">key</a> : String<div class="summaryTableDescription">
+   
+   Returns the identifying key of the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#loadingError">loadingError</a> : <a href="../resource/LoadingError.html">LoadingError</a>
+<div class="summaryTableDescription">[read-only]
+   
+   Returns the loading error in a ResourceLoaderEvent.FAILURE event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxLoadingTrials">maxLoadingTrials</a> : uint<div class="summaryTableDescription">
+   
+   Returns the max number of trails in case of failures.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractProgressInfo.html#numItems">numItems</a> : uint<div class="summaryTableDescription">
+   
+   Returns the number of items to be loaded within the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractProgressInfo.html#numItemsFailed">numItemsFailed</a> : uint<div class="summaryTableDescription">
+   
+   Returns the number of items failed within the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractProgressInfo.html#numItemsLoaded">numItemsLoaded</a> : uint<div class="summaryTableDescription">
+   
+   Returns the number of items loaded within the loader item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractProgressInfo.html#progress">progress</a> : Number<div class="summaryTableDescription">
+   
+   Returns the progress of the loader item as a decimal value between zero and 1.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractLoaderItem.html#scheduled">scheduled</a> : Boolean<div class="summaryTableDescription">
+   
+   Returns true, if the item already has been added to the loader manager
+   directly or to a sequence or a sequence manager.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractLoaderItem.html#status">status</a> : String<div class="summaryTableDescription">
+   
+   The current loading status.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#timeout">timeout</a> : uint<div class="summaryTableDescription">[write-only]
+   
+   Specifies a timeout after that the resource loader will fail.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#url">url</a> : String<div class="summaryTableDescription">[read-only]
+   
+   Returns the URL of the resource loader.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProtectedProperty" id="hideInheritedProtectedProperty">
+<a onclick="javascript:setInheritedVisible(false,'ProtectedProperty');" href="#protectedPropertySummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Protected Properties</a>
+</div>
+<div class="showInheritedProtectedProperty" id="showInheritedProtectedProperty">
+<a onclick="javascript:setInheritedVisible(true,'ProtectedProperty');" href="#protectedPropertySummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Protected Properties</a>
+</div>
+</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_failedLoadingTrials">_failedLoadingTrials</a> : uint = 0<div class="summaryTableDescription">
+   Number of failed loading trials.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractLoaderItem.html#_isScheduled">_isScheduled</a> : Boolean = false<div class="summaryTableDescription">
+   The schedule marker.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractLoaderItem.html#_key">_key</a> : String<div class="summaryTableDescription">
+   The key used for debugging purposes.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_loadingError">_loadingError</a> : <a href="../resource/LoadingError.html">LoadingError</a>
+<div class="summaryTableDescription">
+   Loading error information.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_loadingTrials">_loadingTrials</a> : uint = 0<div class="summaryTableDescription">
+   Number of loading trials already done.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractProgressInfo.html#_numItems">_numItems</a> : uint = 0<div class="summaryTableDescription">
+   The number of items added.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractProgressInfo.html#_numItemsFailed">_numItemsFailed</a> : uint = 0<div class="summaryTableDescription">
+   The number of items failed loading.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractProgressInfo.html#_numItemsLoaded">_numItemsLoaded</a> : uint = 0<div class="summaryTableDescription">
+   The number of items alredy loaded.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractProgressInfo.html#_progress">_progress</a> : Number = 0<div class="summaryTableDescription">
+   The overall progress of the item.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractProgressInfo.html">AbstractProgressInfo</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_request">_request</a> : URLRequest<div class="summaryTableDescription">
+   The request.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractLoaderItem.html#_status">_status</a> : String<div class="summaryTableDescription">
+   The loader item status.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a></td>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../core/AbstractLoaderItem.html#_type">_type</a> : String<div class="summaryTableDescription">
+   The loader item type.</div>
+</td><td class="summaryTableOwnerCol"><a href="../core/AbstractLoaderItem.html">AbstractLoaderItem</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#AbstractResourceLoader()">AbstractResourceLoader</a>(request:URLRequest)</div>
+<div class="summaryTableDescription">
+   Constructor
+   
+   </div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getProperty()">getProperty</a>(name:String):*</div>
+<div class="summaryTableDescription">
+   
+   Lets you pull a prior specified runtime property.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#load()">load</a>():void</div>
+<div class="summaryTableDescription">
+   
+   Starts loading of the resource.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#pause()">pause</a>():void</div>
+<div class="summaryTableDescription">
+   
+   
+   Marks the item to be ignored by subsequent loader manager queue pulling operations.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#resume()">resume</a>():void</div>
+<div class="summaryTableDescription">
+   
+   
+   Marks a prior paused item to be eligible for loader manager queue polling
+   operations.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setProperty()">setProperty</a>(name:String, value:*):void</div>
+<div class="summaryTableDescription">
+   
+   Lets you specify an arbitrary runtime property to be available within
+   each resource loader event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#stop()">stop</a>():void</div>
+<div class="summaryTableDescription">
+   
+   
+   Immediately stops loading of the item or its containing items.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clear()">clear</a>():Boolean</div>
+<div class="summaryTableDescription">
+   Template method to clean up all internal loader references.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchComplete()">dispatchComplete</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.COMPLETE event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchFailure()">dispatchFailure</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.FAILURE event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchInit()">dispatchInit</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.INIT event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchLoading()">dispatchLoading</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.LOADING event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchLoadingTrialFailure()">dispatchLoadingTrialFailure</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.TRIAL_FAILURE event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchPause()">dispatchPause</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.PAUSE event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchProgress()">dispatchProgress</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.PROGRESS event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchResume()">dispatchResume</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.RESUME event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchStop()">dispatchStop</a>():void</div>
+<div class="summaryTableDescription">
+   Dispatches the ResourceLoaderEvent.STOP event.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#notifyComplete()">notifyComplete</a>(content:*):void</div>
+<div class="summaryTableDescription">
+   A subclass must call notifyComplete in all cases the loading of the
+   resource has been finished successfully.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#notifyFailure()">notifyFailure</a>(errorType:String, failureMessage:String, error:Error = null):void</div>
+<div class="summaryTableDescription">
+   A subclass must call notifyFailure in all cases the loading of the
+   resource cannot be accomplished.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#notifyHttpStatus()">notifyHttpStatus</a>(status:int):void</div>
+<div class="summaryTableDescription">
+   A subclass may call notifyHttpStatus to store a http status code.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#notifyInit()">notifyInit</a>(content:*):void</div>
+<div class="summaryTableDescription">
+   A subclass may call notifyInit if the content is ready for display
+   or any other use.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#notifyProgress()">notifyProgress</a>(bytesTotal:uint = 0, bytesLoaded:uint = 0):void</div>
+<div class="summaryTableDescription">
+   A subclass may call notifyProgress to inform the clients about
+   a change in progess.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#startLoading()">startLoading</a>():void</div>
+<div class="summaryTableDescription">
+   Template method to set up all internal loader references and start loading.</div>
+</td><td class="summaryTableOwnerCol">AbstractResourceLoader</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="bytesLoaded"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bytesLoaded</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>bytesLoaded:uint</code>&nbsp;&nbsp;[read-only]<p>
+   
+   Returns the number of bytes already loaded.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bytesLoaded():uint</code>
+<br>
+</div>
+<a name="bytesTotal"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">bytesTotal</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>bytesTotal:uint</code>&nbsp;&nbsp;[read-only]<p>
+   
+   Returns the number of bytes total.
+   
+   </p><p>Note this is only available after a net connection has been established and
+   the resource information has been received and the http response contains a
+   file size property. In all other cases this method will return zero unit the
+   resource is completely loaded from the server.
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get bytesTotal():uint</code>
+<br>
+</div>
+<a name="callbackFunction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">callbackFunction</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>callbackFunction:Function</code>&nbsp;&nbsp;[write-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set callbackFunction(value:Function):void</code>
+<br>
+</div>
+<a name="content"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">content</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>content:*</code>&nbsp;&nbsp;[read-only]<p>
+   
+   Returns a reference to the loaded content.
+   
+   </p><p>For streaming types the content will be available not before the
+   INIT event has been dispatched. For static types the content won't be
+   available until the resource has been loaded completely from the remote
+   destination.
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get content():*</code>
+<br>
+</div>
+<a name="_failedLoadingTrials"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_failedLoadingTrials</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _failedLoadingTrials:uint = 0</code><p>
+   Number of failed loading trials.
+   </p></div>
+<a name="failedLoadingTrials"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">failedLoadingTrials</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>failedLoadingTrials:uint</code>&nbsp;&nbsp;[read-only]<p>
+   
+   Returns the number of failed loading trails.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get failedLoadingTrials():uint</code>
+<br>
+</div>
+<a name="httpStatus"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">httpStatus</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>httpStatus:int</code>&nbsp;&nbsp;[read-only]<p>
+   
+   Returns the http status of a loaded resource.
+   
+   </p><p>Initial value is -1.</p>
+   
+   <p>Loading from a local realm will set the http status to 0.</p>
+   
+   <p>Loading from a not permitted remote realm will set the http status to 0.</p>
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get httpStatus():int</code>
+<br>
+</div>
+<a name="_loadingError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_loadingError</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _loadingError:<a href="../resource/LoadingError.html">LoadingError</a></code><p>
+   Loading error information.
+   </p></div>
+<a name="loadingError"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loadingError</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>loadingError:<a href="../resource/LoadingError.html">LoadingError</a></code>&nbsp;&nbsp;[read-only]<p>
+   
+   Returns the loading error in a ResourceLoaderEvent.FAILURE event.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get loadingError():<a href="../resource/LoadingError.html">LoadingError</a></code>
+<br>
+</div>
+<a name="_loadingTrials"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_loadingTrials</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _loadingTrials:uint = 0</code><p>
+   Number of loading trials already done.
+   </p></div>
+<a name="maxLoadingTrials"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">maxLoadingTrials</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>maxLoadingTrials:uint</code>&nbsp;&nbsp;[read-write]<p>
+   
+   Returns the max number of trails in case of failures.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get maxLoadingTrials():uint</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxLoadingTrials(value:uint):void</code>
+<br>
+</div>
+<a name="_request"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_request</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _request:URLRequest</code><p>
+   The request.
+   </p></div>
+<a name="timeout"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">timeout</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>timeout:uint</code>&nbsp;&nbsp;[write-only]<p>
+   
+   Specifies a timeout after that the resource loader will fail.
+   
+   </p><p>If the resource loader does not show any raise in progress within this
+   timeout, the loader will try to restart loading the resource as often as
+   specified in connectionTrials. If the number of connectionTrials has been
+   reached, the loader will be marked as failed and dispatch a 
+   ResourceLoaderEvent.FAILURE.</p>
+   
+   <p>Default value is 1000 ms = 1 second.</p>
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set timeout(value:uint):void</code>
+<br>
+</div>
+<a name="url"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">url</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>url:String</code>&nbsp;&nbsp;[read-only]<p>
+   
+   Returns the URL of the resource loader.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get url():String</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="AbstractResourceLoader()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">AbstractResourceLoader</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function AbstractResourceLoader(request:URLRequest)</code><p>
+   Constructor
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">request</span>:URLRequest</code> &mdash; The request.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="callbackFinished()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">callbackFinished</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>sibirjak_loader function callbackFinished():void</code><p>
+   Framework internal method to notify the resource loader about the
+   completion of the callback.
+   
+   </p><p>Will be invoked by the internal Callback instance.</p>
+   </div>
+<a name="clear()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function clear():Boolean</code><p>
+   Template method to clean up all internal loader references.
+   
+   </p><p>An implementor should clean up here all listeners to its particular
+   internal loader and call its clear method.</p>
+   
+   <p>After a reset() invokation the loader must not dispatch any further
+   loading event.</p>
+   <p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="dispatchComplete()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchComplete</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchComplete():void</code><p>
+   Dispatches the ResourceLoaderEvent.COMPLETE event.
+   </p></div>
+<a name="dispatchFailure()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchFailure</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchFailure():void</code><p>
+   Dispatches the ResourceLoaderEvent.FAILURE event.
+   </p></div>
+<a name="dispatchInit()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchInit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchInit():void</code><p>
+   Dispatches the ResourceLoaderEvent.INIT event.
+   </p></div>
+<a name="dispatchLoading()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchLoading</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchLoading():void</code><p>
+   Dispatches the ResourceLoaderEvent.LOADING event.
+   </p></div>
+<a name="dispatchLoadingTrialFailure()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchLoadingTrialFailure</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchLoadingTrialFailure():void</code><p>
+   Dispatches the ResourceLoaderEvent.TRIAL_FAILURE event.
+   </p></div>
+<a name="dispatchPause()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchPause</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchPause():void</code><p>
+   Dispatches the ResourceLoaderEvent.PAUSE event.
+   </p></div>
+<a name="dispatchProgress()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchProgress</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchProgress():void</code><p>
+   Dispatches the ResourceLoaderEvent.PROGRESS event.
+   </p></div>
+<a name="dispatchResume()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchResume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchResume():void</code><p>
+   Dispatches the ResourceLoaderEvent.RESUME event.
+   </p></div>
+<a name="dispatchStop()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchStop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchStop():void</code><p>
+   Dispatches the ResourceLoaderEvent.STOP event.
+   </p></div>
+<a name="getProperty()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getProperty(name:String):*</code><p>
+   
+   Lets you pull a prior specified runtime property.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> &mdash; The name of the property.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code> &mdash; The value of the property to get.
+   </td>
+</tr>
+</table>
+</div>
+<a name="hasCallback()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasCallback</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>sibirjak_loader function hasCallback():Boolean</code><p>
+   Framework internal method to detect, if a callback has been defined
+   to this resource loader.
+   
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; true, if a callback is defined.
+   </td>
+</tr>
+</table>
+</div>
+<a name="load()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">load</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function load():void</code><p>
+   
+   Starts loading of the resource.
+   
+   </p><p>Won't have any effect if the status is any other than
+   LoaderItemStatus.WAITING.</p>
+   </div>
+<a name="notifyComplete()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">notifyComplete</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function notifyComplete(content:*):void</code><p>
+   A subclass must call notifyComplete in all cases the loading of the
+   resource has been finished successfully.
+   
+   </p><p>Executes the callback before the final COMPLETE event is dispatched.</p>
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">content</span>:*</code> &mdash; The loaded content.
+   </td>
+</tr>
+</table>
+</div>
+<a name="notifyFailure()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">notifyFailure</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected final function notifyFailure(errorType:String, failureMessage:String, error:Error = null):void</code><p>
+   A subclass must call notifyFailure in all cases the loading of the
+   resource cannot be accomplished.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">errorType</span>:String</code> &mdash; The detailed failure description.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">failureMessage</span>:String</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">error</span>:Error</code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="notifyHttpStatus()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">notifyHttpStatus</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected final function notifyHttpStatus(status:int):void</code><p>
+   A subclass may call notifyHttpStatus to store a http status code.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">status</span>:int</code> &mdash; The status code.
+   </td>
+</tr>
+</table>
+</div>
+<a name="notifyInit()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">notifyInit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function notifyInit(content:*):void</code><p>
+   A subclass may call notifyInit if the content is ready for display
+   or any other use.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">content</span>:*</code> &mdash; The loaded content.
+   </td>
+</tr>
+</table>
+</div>
+<a name="notifyProgress()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">notifyProgress</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected final function notifyProgress(bytesTotal:uint = 0, bytesLoaded:uint = 0):void</code><p>
+   A subclass may call notifyProgress to inform the clients about
+   a change in progess.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">bytesTotal</span>:uint</code> (default = <code>0</code>)<code></code> &mdash; The loaded content.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bytesLoaded</span>:uint</code> (default = <code>0</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="pause()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pause</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function pause():void</code><p>
+   
+   
+   Marks the item to be ignored by subsequent loader manager queue pulling operations.
+   
+   </p><p>Sets the items status to LoaderItemStatus.PAUSED. Does only have effect to items
+   which status is LoaderItemStatus.WAITING. You cannot pause a loading or finished item.
+   To interrupt loading you need to call stop() for the particular item.</p>
+   
+   <p>If the item is of type LoaderItemType.SEQUENCE, only the sequence will be marked
+   as paused.</p>
+   
+   <p>If the item is of type LoaderItemType.SEQUENCE_MANAGER, only the sequence manager
+   will be marked as paused.</p>
+   </div>
+<a name="resume()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function resume():void</code><p>
+   
+   
+   Marks a prior paused item to be eligible for loader manager queue polling
+   operations.
+   
+   </p><p>Sets the items status to LoaderItemStatus.WAITING. Does only have effect to items
+   which status is LoaderItemStatus.PAUSED.</p>
+   
+   <p>If the item is of type LoaderItemType.SEQUENCE, only the sequence's status will be
+   affected.</p>
+   
+   <p>If the item is of type LoaderItemType.SEQUENCE_MANAGER, only the sequence manager's
+   status will be affected.</p>
+   </div>
+<a name="setProperty()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setProperty</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setProperty(name:String, value:*):void</code><p>
+   
+   Lets you specify an arbitrary runtime property to be available within
+   each resource loader event.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code> &mdash; The name of the property.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:*</code> &mdash; The value of the property.
+   </td>
+</tr>
+</table>
+</div>
+<a name="startLoading()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">startLoading</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function startLoading():void</code><p>
+   Template method to set up all internal loader references and start loading.
+   
+   </p><p>An implementor should set up here all listeners to its particular
+   internal loader and invoke its load method.</p>
+   </div>
+<a name="stop()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">stop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function stop():void</code><p>
+   
+   
+   Immediately stops loading of the item or its containing items.
+   
+   </p><p>If the item is of type LoaderItemType.LOADER and is currently being
+   loading, the associated net connection will be closed. Does only have effect
+   to resource loaders, which status is LoaderItemStatus.LOADING. Sets the loader
+   status back to LoaderItemStatus.WAITING. You cannot stop finished loaders
+   (LoaderItemStatus.COMPLETE, LoaderItemStatus.FAILURE) any more.</p>
+   
+   <p>If the item is of type LoaderItemType.SEQUENCE, all open loaders
+   assigned to the seqeunce will be stopped.</p>
+   
+   <p>If the item is of type LoaderItemType.SEQUENCE_MANAGER, the stop
+   method of all assigned sequences will be called.</p>
+   </div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

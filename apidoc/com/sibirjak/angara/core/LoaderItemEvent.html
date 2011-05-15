@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="LoaderItemEvent,com.sibirjak.angara.core.LoaderItemEvent,ADD,CLEAR,COMPLETE,FAILURE,PAUSE,PROGRESS,REMOVE,RESUME,STOP,_affectedLoaderItem,_loaderItem,_priority,affectedLoaderItem,loaderItem,priority" name="keywords">
+<title>com.sibirjak.angara.core.LoaderItemEvent</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'LoaderItemEvent - Angara Load Control 0.9.0';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/sibirjak/angara/core/LoaderItemEvent.html&amp;com/sibirjak/angara/core/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;LoaderItemEvent</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class LoaderItemEvent"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.sibirjak.angara.core</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class LoaderItemEvent</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">LoaderItemEvent <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> flash.events.Event</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../resource/ResourceLoaderEvent.html">ResourceLoaderEvent</a>, <a href="../sequence/SequenceEvent.html">SequenceEvent</a>, <a href="../sequence/SequenceManagerEvent.html">SequenceManagerEvent</a></td>
+</tr>
+</table>
+<p></p>
+  Loader item event definition.
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#affectedLoaderItem">affectedLoaderItem</a> : <a href="../core/ILoaderItem.html">ILoaderItem</a>
+<div class="summaryTableDescription">[read-only]
+   Returns the affected child loader item, which has been added or removed.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#loaderItem">loaderItem</a> : <a href="../core/ILoaderItem.html">ILoaderItem</a>
+<div class="summaryTableDescription">[read-only]
+   Returns the event dispatching loader item.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#priority">priority</a> : uint<div class="summaryTableDescription">[read-only]
+   Returns the priority the item is added with to the LoaderManager.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_affectedLoaderItem">_affectedLoaderItem</a> : <a href="../core/ILoaderItem.html">ILoaderItem</a>
+<div class="summaryTableDescription">
+   Reference to a child oader item, which has been added or removed.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_loaderItem">_loaderItem</a> : <a href="../core/ILoaderItem.html">ILoaderItem</a>
+<div class="summaryTableDescription">
+   Reference to the event dispatching loader item.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_priority">_priority</a> : uint<div class="summaryTableDescription">
+   Loader item priority.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#LoaderItemEvent()">LoaderItemEvent</a>(type:String, loaderItem:<a href="ILoaderItem.html">ILoaderItem</a>, affectedLoaderItem:<a href="ILoaderItem.html">ILoaderItem</a> = null, priority:uint = 0)</div>
+<div class="summaryTableDescription">
+   Creates a new LoaderItemEvent.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ADD">ADD</a> : String = "item_added"<div class="summaryTableDescription">[static]
+   An item has been added to the loader manager queue (Schedule)
+   or to a sequence.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#CLEAR">CLEAR</a> : String = "item_clear"<div class="summaryTableDescription">[static]
+   Item container has been cleared.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#COMPLETE">COMPLETE</a> : String = "item_complete"<div class="summaryTableDescription">[static]
+   Item is complete.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#FAILURE">FAILURE</a> : String = "item_failure"<div class="summaryTableDescription">[static]
+   Loading resource has been failed.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#PAUSE">PAUSE</a> : String = "item_pause"<div class="summaryTableDescription">[static]
+   Item has been paused.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#PROGRESS">PROGRESS</a> : String = "item_progress"<div class="summaryTableDescription">[static]
+   Progress of an item has changed.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#REMOVE">REMOVE</a> : String = "item_removed"<div class="summaryTableDescription">[static]
+   An item has been removed from the to the loader manager queue (Schedule)
+   or from the connection pool.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#RESUME">RESUME</a> : String = "item_resume"<div class="summaryTableDescription">[static]
+   Item has been resumed.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#STOP">STOP</a> : String = "item_stop"<div class="summaryTableDescription">[static]
+   Item has been stopped.</div>
+</td><td class="summaryTableOwnerCol">LoaderItemEvent</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="_affectedLoaderItem"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_affectedLoaderItem</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _affectedLoaderItem:<a href="../core/ILoaderItem.html">ILoaderItem</a></code><p>
+   Reference to a child oader item, which has been added or removed.
+   </p></div>
+<a name="affectedLoaderItem"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">affectedLoaderItem</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>affectedLoaderItem:<a href="../core/ILoaderItem.html">ILoaderItem</a></code>&nbsp;&nbsp;[read-only]<p>
+   Returns the affected child loader item, which has been added or removed.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get affectedLoaderItem():<a href="../core/ILoaderItem.html">ILoaderItem</a></code>
+<br>
+</div>
+<a name="_loaderItem"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_loaderItem</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _loaderItem:<a href="../core/ILoaderItem.html">ILoaderItem</a></code><p>
+   Reference to the event dispatching loader item.
+   </p></div>
+<a name="loaderItem"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loaderItem</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>loaderItem:<a href="../core/ILoaderItem.html">ILoaderItem</a></code>&nbsp;&nbsp;[read-only]<p>
+   Returns the event dispatching loader item.
+   
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get loaderItem():<a href="../core/ILoaderItem.html">ILoaderItem</a></code>
+<br>
+</div>
+<a name="_priority"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_priority</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _priority:uint</code><p>
+   Loader item priority.
+   
+   </p><p>Item priority when added to the LoaderManager.</p>
+   </div>
+<a name="priority"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">priority</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>priority:uint</code>&nbsp;&nbsp;[read-only]<p>
+   Returns the priority the item is added with to the LoaderManager.
+   
+   </p><p>This property is only set in the ADD event of the LoaderManager.</p>
+   
+   <span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get priority():uint</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="LoaderItemEvent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LoaderItemEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function LoaderItemEvent(type:String, loaderItem:<a href="ILoaderItem.html">ILoaderItem</a>, affectedLoaderItem:<a href="ILoaderItem.html">ILoaderItem</a> = null, priority:uint = 0)</code><p>
+   Creates a new LoaderItemEvent.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">type</span>:String</code> &mdash; Type of the event.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">loaderItem</span>:<a href="ILoaderItem.html">ILoaderItem</a></code> &mdash; Reference to the affected loader item.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">affectedLoaderItem</span>:<a href="ILoaderItem.html">ILoaderItem</a></code> (default = <code>null</code>)<code></code> &mdash; The affected (added or removed) child loader item.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">priority</span>:uint</code> (default = <code>0</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="ADD"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ADD</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ADD:String = "item_added"</code><p>
+   An item has been added to the loader manager queue (Schedule)
+   or to a sequence.
+   
+   </p><p>The loader manager will start listening to events of the scheduled
+   item (Schedule) or continue loading (Sequence and SequenceManager)</p>
+   
+   <p>Dispatched by Schedule, Sequence and SequenceManager.</p>
+   </div>
+<a name="CLEAR"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">CLEAR</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const CLEAR:String = "item_clear"</code><p>
+   Item container has been cleared.
+   
+   </p><p>Dispatched by LoaderManager, Sequence and SequenceManager.</p>
+   </div>
+<a name="COMPLETE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">COMPLETE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const COMPLETE:String = "item_complete"</code><p>
+   Item is complete.
+   
+   </p><p>Dispatched by all loader items.</p>
+   </div>
+<a name="FAILURE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">FAILURE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const FAILURE:String = "item_failure"</code><p>
+   Loading resource has been failed.
+   
+   </p><p>Dispatched only by resource loaders.</p>
+   </div>
+<a name="PAUSE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">PAUSE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const PAUSE:String = "item_pause"</code><p>
+   Item has been paused.
+   
+   </p><p>Dispatched by all loader items.</p>
+   </div>
+<a name="PROGRESS"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">PROGRESS</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const PROGRESS:String = "item_progress"</code><p>
+   Progress of an item has changed.
+   
+   </p><p>Dispatched by all loader items.</p>
+   </div>
+<a name="REMOVE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">REMOVE</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const REMOVE:String = "item_removed"</code><p>
+   An item has been removed from the to the loader manager queue (Schedule)
+   or from the connection pool.
+   
+   </p><p>The loader manager will stop listening to events of the scheduled item
+   after the Schedule dispatchs this event.</p>
+   
+   <p>The loader manager will find the next items to load after the ConnectionPool
+   dispatchs this event.</p>
+   
+   <p>Dispatched by Schedule and ConnectionPool.</p>
+   </div>
+<a name="RESUME"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">RESUME</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const RESUME:String = "item_resume"</code><p>
+   Item has been resumed.
+   
+   </p><p>Dispatched by all loader items.</p>
+   </div>
+<a name="STOP"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">STOP</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const STOP:String = "item_stop"</code><p>
+   Item has been stopped.
+   
+   </p><p>Dispatched by all loader items.</p>
+   </div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
