@@ -1,4 +1,5 @@
 package com.sibirjak.angara.sequence.testhelpers {
+
 	import com.sibirjak.angara.sequence.ISequence;
 	import com.sibirjak.angara.sequence.SequenceEvent;
 

@@ -3,6 +3,7 @@ package com.sibirjak.angara.resource.loaders {
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.resource.ResourceLoaderEvent;
 	import com.sibirjak.angara.utils.ImageAssetLoader;
+
 	import flash.net.URLRequest;
 	import flash.net.URLRequestMethod;
 	import flash.net.URLVariables;

@@ -1,4 +1,5 @@
 package assets {
+
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
 

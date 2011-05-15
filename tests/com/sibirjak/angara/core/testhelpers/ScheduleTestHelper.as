@@ -6,6 +6,7 @@ package com.sibirjak.angara.core.testhelpers {
 	import com.sibirjak.angara.sequence.ISequenceManager;
 	import com.sibirjak.angara.sequence.testhelpers.SequenceManagerMock;
 	import com.sibirjak.angara.sequence.testhelpers.SequenceTestHelper;
+
 	import org.as3commons.collections.ArrayList;
 	import org.as3commons.collections.framework.IList;
 

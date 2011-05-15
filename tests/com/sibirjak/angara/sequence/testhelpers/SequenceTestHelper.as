@@ -4,6 +4,7 @@ package com.sibirjak.angara.sequence.testhelpers {
 	import com.sibirjak.angara.core.testhelpers.CoreTestHelper;
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.sequence.ISequence;
+
 	import org.as3commons.collections.framework.IIterator;
 
 

@@ -1,6 +1,8 @@
 package com.sibirjak.angara.resource.loaders {
+
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.resource.ResourceLoaderEvent;
+
 	import flash.display.Sprite;
 
 

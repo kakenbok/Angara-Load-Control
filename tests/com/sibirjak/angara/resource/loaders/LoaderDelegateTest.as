@@ -1,9 +1,12 @@
 package com.sibirjak.angara.resource.loaders {
+
 	import assets.RemoteSwf;
+
 	import com.sibirjak.angara.core.LoaderItemStatus;
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.resource.LoadingError;
 	import com.sibirjak.angara.resource.ResourceLoaderEvent;
+
 	import flash.display.Loader;
 	import flash.display.LoaderInfo;
 	import flash.events.Event;

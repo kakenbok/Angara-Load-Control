@@ -1,10 +1,13 @@
 package com.sibirjak.angara.resource.loaders {
+
+	import flexunit.framework.TestCase;
+
 	import com.sibirjak.angara.core.LoaderItemStatus;
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.resource.LoadingError;
 	import com.sibirjak.angara.resource.ResourceLoaderEvent;
+
 	import flash.system.Security;
-	import flexunit.framework.TestCase;
 
 
 

@@ -1,4 +1,5 @@
 package com.sibirjak.angara.monitor.testhelpers {
+
 	import com.sibirjak.angara.monitor.IMonitor;
 	import com.sibirjak.angara.monitor.MonitorEvent;
 	import com.sibirjak.angara.resource.IResourceLoader;

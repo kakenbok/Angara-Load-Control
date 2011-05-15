@@ -5,6 +5,7 @@ package com.sibirjak.angara.monitor.testhelpers {
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.sequence.ISequence;
 	import com.sibirjak.angara.sequence.testhelpers.SequenceTestHelper;
+
 	import org.as3commons.collections.ArrayList;
 	import org.as3commons.collections.framework.IOrderedList;
 

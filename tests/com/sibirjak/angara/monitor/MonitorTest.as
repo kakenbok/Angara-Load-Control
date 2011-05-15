@@ -1,5 +1,7 @@
 package com.sibirjak.angara.monitor {
 
+	import flexunit.framework.TestCase;
+
 	import com.sibirjak.angara.core.LoaderItemStatus;
 	import com.sibirjak.angara.core.testhelpers.CoreTestHelper;
 	import com.sibirjak.angara.monitor.testhelpers.MonitorListener;
@@ -9,7 +11,7 @@ package com.sibirjak.angara.monitor {
 	import com.sibirjak.angara.sequence.ISequence;
 	import com.sibirjak.angara.sequence.testhelpers.SequenceMock;
 	import com.sibirjak.angara.sequence.testhelpers.SequenceTestHelper;
-	import flexunit.framework.TestCase;
+
 	import org.as3commons.collections.framework.IOrderedList;
 
 

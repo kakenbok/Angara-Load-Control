@@ -2,6 +2,7 @@ package com.sibirjak.angara.sequence.testhelpers {
 
 	import com.sibirjak.angara.sequence.ISequence;
 	import com.sibirjak.angara.sequence.ISequenceManager;
+
 	import org.as3commons.collections.framework.IIterator;
 
 

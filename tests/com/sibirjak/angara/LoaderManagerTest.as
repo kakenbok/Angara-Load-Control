@@ -1,4 +1,7 @@
 package com.sibirjak.angara {
+
+	import flexunit.framework.TestCase;
+
 	import com.sibirjak.angara.core.LoaderItemStatus;
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.resource.loaders.TestLoader;
@@ -8,7 +11,6 @@ package com.sibirjak.angara {
 	import com.sibirjak.angara.sequence.testhelpers.SequenceManagerMock;
 	import com.sibirjak.angara.sequence.testhelpers.SequenceMock;
 	import com.sibirjak.angara.sequence.testhelpers.SequenceTestHelper;
-	import flexunit.framework.TestCase;
 
 
 	/**

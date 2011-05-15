@@ -1,10 +1,12 @@
 package com.sibirjak.angara.core {
+
+	import flexunit.framework.TestCase;
+
 	import com.sibirjak.angara.core.testhelpers.CoreTestHelper;
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.resource.loaders.TestLoader;
 	import com.sibirjak.angara.sequence.ISequence;
 	import com.sibirjak.angara.sequence.testhelpers.SequenceMock;
-	import flexunit.framework.TestCase;
 
 
 	/**

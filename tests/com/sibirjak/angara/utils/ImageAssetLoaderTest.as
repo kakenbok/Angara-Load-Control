@@ -1,6 +1,8 @@
 package com.sibirjak.angara.utils {
+
 	import com.sibirjak.angara.resource.ResourceLoaderEvent;
 	import com.sibirjak.angara.resource.loaders.AbstractResourceLoaderTest;
+
 	import flash.display.Bitmap;
 	import flash.net.URLRequest;
 

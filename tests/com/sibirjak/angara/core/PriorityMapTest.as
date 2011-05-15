@@ -1,8 +1,11 @@
 package com.sibirjak.angara.core {
+
+	import flexunit.framework.TestCase;
+
 	import com.sibirjak.angara.resource.loaders.LoaderDelegate;
 	import com.sibirjak.utils.ArrayUtils;
+
 	import flash.net.URLRequest;
-	import flexunit.framework.TestCase;
 
 
 

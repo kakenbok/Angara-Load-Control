@@ -1,9 +1,11 @@
 package com.sibirjak.angara.resource.loaders {
+
 	import com.sibirjak.angara.core.LoaderItemStatus;
 	import com.sibirjak.angara.resource.AbstractResourceLoader;
 	import com.sibirjak.angara.resource.IDisplayAssetLoader;
 	import com.sibirjak.angara.resource.IResourceLoaderContainer;
 	import com.sibirjak.angara.resource.LoadingError;
+
 	import flash.display.Sprite;
 	import flash.events.TimerEvent;
 	import flash.net.URLRequest;
@@ -336,6 +338,7 @@ package com.sibirjak.angara.resource.loaders {
 import com.sibirjak.angara.core.LoaderItemStatus;
 import com.sibirjak.angara.resource.ResourceLoaderEvent;
 import com.sibirjak.angara.resource.loaders.TestLoader;
+
 import flash.display.Sprite;
 import flash.events.MouseEvent;
 import flash.text.TextField;
