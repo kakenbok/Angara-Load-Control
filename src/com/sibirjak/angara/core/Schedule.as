@@ -1,11 +1,11 @@
 package com.sibirjak.angara.core {
 
 	import com.sibirjak.angara.resource.AbstractResourceLoader;
-	import flash.events.EventDispatcher;
+
 	import org.as3commons.collections.framework.IIterator;
 	import org.as3commons.collections.iterators.RecursiveFilterIterator2;
 
-
+	import flash.events.EventDispatcher;
 
 	/**
 	 * The LoaderManager queue.
@@ -203,8 +203,6 @@ package com.sibirjak.angara.core {
 	}
 }
 
-import com.sibirjak.angara.core.ILoaderItem;
-import org.as3commons.collections.framework.IIterator;
 
 
 /**

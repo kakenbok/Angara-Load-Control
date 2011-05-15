@@ -1,4 +1,5 @@
 package com.sibirjak.angara.monitor {
+
 	import com.sibirjak.angara.core.ILoaderItem;
 	import com.sibirjak.angara.core.IProgressInfo;
 

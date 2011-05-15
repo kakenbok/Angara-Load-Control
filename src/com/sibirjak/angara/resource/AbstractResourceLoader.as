@@ -4,13 +4,13 @@ package com.sibirjak.angara.resource {
 	import com.sibirjak.angara.core.LoaderItemStatus;
 	import com.sibirjak.angara.core.LoaderItemType;
 	import com.sibirjak.angara.core.sibirjak_loader;
-	import flash.events.TimerEvent;
-	import flash.net.URLRequest;
-	import flash.utils.Timer;
+
 	import org.as3commons.collections.Map;
 	import org.as3commons.collections.framework.IMap;
 
-
+	import flash.events.TimerEvent;
+	import flash.net.URLRequest;
+	import flash.utils.Timer;
 
 	/**
 	 * Abstract implementation of the IResourceLoader interface.

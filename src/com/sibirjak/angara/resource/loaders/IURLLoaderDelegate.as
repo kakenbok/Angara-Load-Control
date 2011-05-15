@@ -1,4 +1,5 @@
 package com.sibirjak.angara.resource.loaders {
+
 	import com.sibirjak.angara.resource.IResourceLoader;
 
 	/**

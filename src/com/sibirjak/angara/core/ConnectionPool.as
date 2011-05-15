@@ -3,13 +3,13 @@ package com.sibirjak.angara.core {
 	import com.sibirjak.angara.resource.AbstractResourceLoader;
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.resource.ResourceLoaderEvent;
-	import flash.events.Event;
-	import flash.events.EventDispatcher;
+
 	import org.as3commons.collections.LinkedSet;
 	import org.as3commons.collections.framework.IIterator;
 	import org.as3commons.collections.framework.IOrderedSet;
 
-
+	import flash.events.Event;
+	import flash.events.EventDispatcher;
 
 	/**
 	 * Manages all open loader connections.

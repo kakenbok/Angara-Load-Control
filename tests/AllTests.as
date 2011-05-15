@@ -1,5 +1,7 @@
 package {
 
+	import flexunit.framework.TestSuite;
+
 	import com.sibirjak.angara.LoaderManagerTest;
 	import com.sibirjak.angara.core.ConnectionPoolTest;
 	import com.sibirjak.angara.core.PriorityMapTest;
@@ -12,8 +14,6 @@ package {
 	import com.sibirjak.angara.sequence.SequenceManagerTest;
 	import com.sibirjak.angara.sequence.SequenceTest;
 	import com.sibirjak.angara.utils.ImageAssetLoaderTest;
-	import flexunit.framework.TestSuite;
-
 
 	/**
 	 * @author jes 11.02.2009

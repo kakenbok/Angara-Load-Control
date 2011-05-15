@@ -1,4 +1,5 @@
 package com.sibirjak.angara.resource {
+
 	import flash.display.DisplayObject;
 
 	/**

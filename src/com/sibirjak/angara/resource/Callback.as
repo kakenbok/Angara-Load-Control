@@ -1,7 +1,8 @@
 package com.sibirjak.angara.resource {
-	import com.sibirjak.angara.core.sibirjak_loader;
-	import flash.events.EventDispatcher;
 
+	import com.sibirjak.angara.core.sibirjak_loader;
+
+	import flash.events.EventDispatcher;
 
 	/**
 	 * @author jes 04.05.2009

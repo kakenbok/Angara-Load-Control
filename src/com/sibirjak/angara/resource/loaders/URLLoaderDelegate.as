@@ -1,6 +1,8 @@
 package com.sibirjak.angara.resource.loaders {
+
 	import com.sibirjak.angara.resource.AbstractResourceLoader;
 	import com.sibirjak.angara.resource.LoadingError;
+
 	import flash.events.Event;
 	import flash.events.HTTPStatusEvent;
 	import flash.events.IOErrorEvent;
@@ -8,7 +10,6 @@ package com.sibirjak.angara.resource.loaders {
 	import flash.events.SecurityErrorEvent;
 	import flash.net.URLLoader;
 	import flash.net.URLRequest;
-
 
 	/**
 	 * Adapter to the built-in Flash URLLoader class.

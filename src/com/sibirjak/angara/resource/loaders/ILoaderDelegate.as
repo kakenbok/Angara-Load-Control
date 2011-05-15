@@ -1,8 +1,9 @@
 package com.sibirjak.angara.resource.loaders {
+
 	import com.sibirjak.angara.resource.IDisplayAssetLoader;
 	import com.sibirjak.angara.resource.IResourceLoader;
-	import flash.system.LoaderContext;
 
+	import flash.system.LoaderContext;
 
 	/**
 	 * Extends the IResourceLoader interface with flash Loader functionality.

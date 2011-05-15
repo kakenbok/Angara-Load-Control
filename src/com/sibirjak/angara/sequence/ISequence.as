@@ -2,8 +2,8 @@ package com.sibirjak.angara.sequence {
 
 	import com.sibirjak.angara.core.ILoaderItem;
 	import com.sibirjak.angara.resource.IResourceLoader;
-	import org.as3commons.collections.framework.IIterable;
 
+	import org.as3commons.collections.framework.IIterable;
 
 	/**
 	 * A sequence enables the controlling of a list of resource loaders.

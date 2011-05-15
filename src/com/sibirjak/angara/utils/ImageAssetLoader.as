@@ -1,14 +1,15 @@
 package com.sibirjak.angara.utils {
+
 	import com.sibirjak.angara.resource.IDisplayAssetLoader;
 	import com.sibirjak.angara.resource.IResourceLoaderContainer;
 	import com.sibirjak.angara.resource.loaders.URLLoaderDelegate;
+
 	import flash.display.Loader;
 	import flash.display.LoaderInfo;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.net.URLLoaderDataFormat;
 	import flash.net.URLRequest;
-
 
 	/**
 	 * The ImageAssetLoader loads display assets via an URLLoaderDelegate, which

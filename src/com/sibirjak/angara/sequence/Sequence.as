@@ -9,10 +9,10 @@ package com.sibirjak.angara.sequence {
 	import com.sibirjak.angara.monitor.MonitorEvent;
 	import com.sibirjak.angara.resource.IResourceLoader;
 	import com.sibirjak.angara.resource.ResourceLoaderEvent;
+
 	import org.as3commons.collections.LinkedSet;
 	import org.as3commons.collections.framework.IIterator;
 	import org.as3commons.collections.framework.IOrderedSet;
-
 
 	/**
 	 * A sequence is a list of resource loaders.

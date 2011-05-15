@@ -1,12 +1,13 @@
 package com.sibirjak.angara {
+
 	import com.sibirjak.angara.core.ConnectionPool;
 	import com.sibirjak.angara.core.ILoaderItem;
 	import com.sibirjak.angara.core.LoaderItemEvent;
 	import com.sibirjak.angara.core.LoaderItemStatus;
 	import com.sibirjak.angara.core.Schedule;
+
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
-
 
 	/**
 	 * @author jes 10.02.2009

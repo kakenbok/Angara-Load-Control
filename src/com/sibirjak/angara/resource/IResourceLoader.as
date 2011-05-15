@@ -1,4 +1,5 @@
 package com.sibirjak.angara.resource {
+
 	import com.sibirjak.angara.core.ILoaderItem;
 
 	/**

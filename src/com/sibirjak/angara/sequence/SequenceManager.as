@@ -4,10 +4,10 @@ package com.sibirjak.angara.sequence {
 	import com.sibirjak.angara.core.LoaderItemStatus;
 	import com.sibirjak.angara.core.LoaderItemType;
 	import com.sibirjak.angara.core.sibirjak_loader;
+
 	import org.as3commons.collections.LinkedSet;
 	import org.as3commons.collections.framework.IIterator;
 	import org.as3commons.collections.framework.IOrderedSet;
-
 
 	/**
 	 * The Sequence manager controls the behaviour of a set of sequences.

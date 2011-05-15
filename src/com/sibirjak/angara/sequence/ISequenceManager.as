@@ -1,8 +1,8 @@
 package com.sibirjak.angara.sequence {
 
 	import com.sibirjak.angara.core.ILoaderItem;
-	import org.as3commons.collections.framework.IIterable;
 
+	import org.as3commons.collections.framework.IIterable;
 
 	/**
 	 * The sequence manager is a convenient class to group and manage the

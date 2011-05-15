@@ -1,12 +1,12 @@
 package com.sibirjak.angara.sequence {
 
 	import com.sibirjak.angara.resource.IResourceLoader;
+
 	import org.as3commons.collections.ArrayList;
 	import org.as3commons.collections.LinkedSet;
 	import org.as3commons.collections.framework.IIterator;
 	import org.as3commons.collections.framework.IOrderedList;
 	import org.as3commons.collections.framework.IOrderedSet;
-
 
 	/**
 	 * A paged sequence enables loading of only a range of containing loaders

@@ -1,7 +1,9 @@
 package com.sibirjak.angara.resource.loaders {
+
 	import com.sibirjak.angara.resource.AbstractResourceLoader;
 	import com.sibirjak.angara.resource.IResourceLoaderContainer;
 	import com.sibirjak.angara.resource.LoadingError;
+
 	import flash.display.DisplayObject;
 	import flash.display.Loader;
 	import flash.display.LoaderInfo;
@@ -12,7 +14,6 @@ package com.sibirjak.angara.resource.loaders {
 	import flash.events.ProgressEvent;
 	import flash.net.URLRequest;
 	import flash.system.LoaderContext;
-
 
 	/**
 	 * Adapter to the built-in Flash Loader class.

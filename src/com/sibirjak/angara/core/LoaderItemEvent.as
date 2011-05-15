@@ -1,4 +1,5 @@
 package com.sibirjak.angara.core {
+
 	import flash.events.Event;
 	
 	/**

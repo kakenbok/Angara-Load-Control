@@ -1,6 +1,6 @@
 package com.sibirjak.angara.monitor {
-	import flash.events.Event;
 
+	import flash.events.Event;
 
 	/**
 	 * Monitor event definition.

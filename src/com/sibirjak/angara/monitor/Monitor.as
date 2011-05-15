@@ -3,10 +3,10 @@ package com.sibirjak.angara.monitor {
 	import com.sibirjak.angara.core.AbstractProgressInfo;
 	import com.sibirjak.angara.core.ILoaderItem;
 	import com.sibirjak.angara.core.LoaderItemEvent;
+
 	import org.as3commons.collections.Map;
 	import org.as3commons.collections.framework.IIterator;
 	import org.as3commons.collections.framework.IMap;
-
 
 	/**
 	 * The monitor takes care of the loading progess of a list of loader items.

@@ -1,7 +1,8 @@
 package com.sibirjak.angara {
-	import com.sibirjak.angara.core.ILoaderItem;
-	import flash.events.IEventDispatcher;
 
+	import com.sibirjak.angara.core.ILoaderItem;
+
+	import flash.events.IEventDispatcher;
 
 	/**
 	 * The LoaderManager interface.
