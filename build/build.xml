@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Angara" default="SWC" basedir="../" >
+	
+	<property name="FLEX_HOME" value="c:\FDT\plugins\com.powerflasher.fdt.shippedFlexSDK_3.5.0.12683a_1000\\flex" />
+	<property name="ASDOC" value="${FLEX_HOME}\bin\asdoc.exe" />
+
+	<property name="FILE_NAME" value="angara-load-control" />
+	<property name="VERSION" value="0.9.0" />
+
+	<property name="SRC" value="src" />
+	<property name="EXAMPLES" value="examples" />
+
+	<property name="LIBS" value="libs" />
+	<property name="ZIP" value="deploy/zip" />
+	<property name="SWC" value="deploy/swc" />
+	<property name="DOC" value="deploy/doc" />
+
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar"/> 
+
+	<target name="SWC" description="Compile Libray">
+		<compc output="${SWC}/${FILE_NAME}-${VERSION}.swc">
+			<include-sources dir="${basedir}/${SRC}/com/sibirjak/angara/" includes="*" /> 
+
+			<!-- Libs -->
+			<external-library-path dir="${LIBS}" includes="*" />
+			<external-library-path dir="${FLEX_HOME}/frameworks/libs/player/9" includes="*" />
+		</compc>
+	</target>
+
+	<target name="Clean" description="Clean">
+		<delete dir="${DOC}/apidoc" failonerror="false" />
+	</target>
+
+	<target name="APIDoc" depends="Clean">
+		<exec executable="${ASDOC}" failonerror="true">
+			<arg line="-doc-sources 'src/com/sibirjak/angara'" />
+			<arg line="-source-path '${SRC}'" />
+			<arg line="-window-title 'Angara Load Control ${VERSION}'" />
+			<arg line="-output '${DOC}/apidoc'"/>
+
+			<arg line="-external-library-path libs" />
+
+			<!--
+			<arg line="-package com.sibirjak.angara 'Public JCSS package (public).'" />
+			<arg line="-package com.sibirjak.angara.framework 'Framework internal code (hidden).'" />
+			<arg line="-package com.sibirjak.angara.framework.core 'Framework internal code (hidden).'" />
+			<arg line="-package com.sibirjak.angara.framework.finder 'Framework internal code (hidden).'" />
+			<arg line="-package com.sibirjak.angara.framework.parser 'Framework internal code (hidden).'" />
+			<arg line="-package com.sibirjak.angara.framework.roles 'Framework internal code (hidden).'" />
+			<arg line="-package com.sibirjak.angara.framework.states 'Framework internal code (hidden).'" />
+			<arg line="-package com.sibirjak.angara.framework.stylerules 'Framework internal code (hidden).'" />
+			<arg line="-package com.sibirjak.angara.framework.styles 'Framework internal code (hidden).'" />
+			<arg line="-package com.sibirjak.angara.framework.update 'Framework internal code (hidden).'" />
+			-->
+		</exec>
+
+		<fixcrlf srcdir="${DOC}/apidoc" includes="**/*.*" eol="lf" />
+	</target>
+
+	<target name="Zip" description="ZIP">
+ 		<delete file="${ZIP}/${FILE_NAME}-${VERSION}.zip" />
+
+		<zip destfile="${ZIP}/${FILE_NAME}-${VERSION}.zip">
+			<zipfileset dir="${SRC}" prefix="src" />
+			<!--<zipfileset dir="${EXAMPLES}" prefix="examples" />-->
+			<zipfileset file="${SWC}/${FILE_NAME}-${VERSION}.swc" prefix="swc" />
+			<zipfileset dir="${LIBS}" prefix="libs" />
+			<zipfileset dir="${DOC}" prefix="doc" />
+		</zip>
+		
+	</target>
+
+</project>
