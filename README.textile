@@ -8,7 +8,13 @@ h3. References
 
 *Documentation*
 
-* "Project Homepage":http://sibirjak.com/osflash/projects/angara-load-control/ (Overview, Features, Documentation, Examples)
+* "Project Homepage":http://sibirjak.com/osflash/projects/angara-load-control	/ (Overview, Features, Documentation, Examples)
 * "APIDoc":http://kakenbok.github.com/Angara-Load-Control/apidoc/
 
+h3. Features
 
+* Supports sequences and group of sequences
+* Stop and resume loading for a single item, a sequence or a group of sequences
+* Loader callbacks with stopOnCallback
+* Monitoring of individual items, sequences, loading at all
+* Paged sequences (loading only of visible parts of a sequence) 
