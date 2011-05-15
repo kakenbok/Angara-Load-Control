@@ -1,3 +1,14 @@
 h2. Angara Load Control - Flash Loading Management Framework
 
-Documentation coming soon.
+h3. References
+
+*Downloads*
+
+* "Downloads":https://github.com/kakenbok/Angara-Load-Control/downloads (ZIP, SWC)
+
+*Documentation*
+
+* "Project Homepage":http://sibirjak.com/osflash/projects/angara-load-control/ (Overview, Features, Documentation, Examples)
+* "APIDoc":http://kakenbok.github.com/Angara-Load-Control/apidoc/
+
+
