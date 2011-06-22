@@ -1,4 +1,4 @@
-Angara Load Control -ActionScript loading manager
+Angara Load Control - ActionScript loading manager
 
 h3. References
 
