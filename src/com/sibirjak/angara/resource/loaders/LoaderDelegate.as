@@ -149,7 +149,7 @@ package com.sibirjak.angara.resource.loaders {
 				 * If the item has not started loading yet or is already finished,
 				 * we would get here an error when closing the loader connection.
 				 */ 
-				trace ("stop failed " + _loader + " " + e + " " + this + " -- total " + _loader.contentLoaderInfo.bytesTotal + " loaded " + _loader.contentLoaderInfo.bytesLoaded);
+//				trace ("stop failed " + _loader + " " + e + " " + this + " -- total " + _loader.contentLoaderInfo.bytesTotal + " loaded " + _loader.contentLoaderInfo.bytesLoaded);
 				return false;
 			}
 			return true;
@@ -185,7 +185,7 @@ package com.sibirjak.angara.resource.loaders {
 		 * Handles the http status.
 		 */
 		private function statusHandler(event : HTTPStatusEvent) : void {
-			trace ("[ImageLoader] onHttpStatusHandler " + event.status + " " + this);
+//			trace ("[ImageLoader] onHttpStatusHandler " + event.status + " " + this);
 			notifyHttpStatus(event.status);
 		}
 
@@ -201,7 +201,7 @@ package com.sibirjak.angara.resource.loaders {
 		 * Handles the io error event.
 		 */
 		private function IOErrorHandler(event : IOErrorEvent) : void {
-			trace ("[ImageLoader] errorHandler " + event.text + " " + this);
+//			trace ("[ImageLoader] errorHandler " + event.text + " " + this);
 
 			deconfigureListeners();
 			notifyFailure(LoadingError.FILE_NOT_FOUND, "File not found! " + event.text);

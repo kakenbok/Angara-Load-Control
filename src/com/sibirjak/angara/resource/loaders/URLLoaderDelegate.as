@@ -128,7 +128,7 @@ package com.sibirjak.angara.resource.loaders {
 				 * to load the resource won't be successful and we have no open stream
 				 * that can be reset.
 				 */ 
-				trace ("stop failed " + _urlLoader + " " + e + " " + this + " -- total " + _urlLoader.bytesTotal + " loaded " + _urlLoader.bytesLoaded);
+//				trace ("stop failed " + _urlLoader + " " + e + " " + this + " -- total " + _urlLoader.bytesTotal + " loaded " + _urlLoader.bytesLoaded);
 				return false;
 			}
 			return true;

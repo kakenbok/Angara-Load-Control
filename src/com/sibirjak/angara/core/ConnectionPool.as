@@ -107,7 +107,7 @@ package com.sibirjak.angara.core {
 		 * remove it from the connection pool.</p>
 		 */
 		public function clear() : void {
-			trace ("stop connections:" + this);
+//			trace ("stop connections:" + this);
 			var loader : IResourceLoader;
 			var iterator : IIterator = _connections.iterator();
 			while (iterator.hasNext()) {
@@ -116,7 +116,7 @@ package com.sibirjak.angara.core {
 				loader.stop();
 			}
 			_connections.clear();
-			trace ("/stop connections:" + this);
+//			trace ("/stop connections:" + this);
 
 			dispatchRemove();
 		}

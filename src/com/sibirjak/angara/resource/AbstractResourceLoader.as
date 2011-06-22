@@ -337,7 +337,7 @@ package com.sibirjak.angara.resource {
 
 			dispatchLoadingTrialFailure();
 			
-			trace ("notifyFailure: " + failureMessage);
+//			trace ("notifyFailure: " + failureMessage);
 			
 			removeTimeoutTimer();
 			
@@ -348,7 +348,7 @@ package com.sibirjak.angara.resource {
 			if (errorType == LoadingError.TIMEOUT) {
 				
 				if (_failedLoadingTrials < _maxLoadingTrials) {
-					trace ("[AbstractResourceLoader] next try:" + (_loadingTrials + 1) + " out of " + _maxLoadingTrials + " for " + url);
+//					trace ("[AbstractResourceLoader] next try:" + (_loadingTrials + 1) + " out of " + _maxLoadingTrials + " for " + url);
 					
 					/*
 					 * If reset fails (e.g. for security reasons) we do not start
@@ -359,7 +359,7 @@ package com.sibirjak.angara.resource {
 						_status = LoaderItemStatus.WAITING;
 						load();
 						
-						trace ("-------------------------------------------------------------------");
+//						trace ("-------------------------------------------------------------------");
 						return;
 					}
 				}
@@ -371,7 +371,7 @@ package com.sibirjak.angara.resource {
 
 			_loadingError = new LoadingError(errorType, this, failureMessage, error);
 			dispatchFailure();
-			trace ("-------------------------------------------------------------------");
+//			trace ("-------------------------------------------------------------------");
 		}
 
 		/**
@@ -435,7 +435,7 @@ package com.sibirjak.angara.resource {
 					_timeoutTimer.delay = 200;
 					
 				} else {
-					trace ("no timeout timer for " + this + " " + _progress);
+//					trace ("no timeout timer for " + this + " " + _progress);
 				}
 			}
 
